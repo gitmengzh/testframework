@@ -1,8 +1,8 @@
 import json
 import requests
 
+# 参考封装requests  https://testerhome.com/articles/31956   https://www.cnblogs.com/df888/p/12365710.html   封装 requests
 
-# 封装一个post
 
 class  HttpRequest(object):
 
@@ -12,6 +12,7 @@ class  HttpRequest(object):
         """
         self.url = baseUrl
 
+    # 封装一个post
     def basePost(self, data, interface=None, method=None, app_type='json'):
         """
             :param  data: 请求数据
